@@ -1,8 +1,11 @@
 {
   "name": "tpstart",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate your TypeScript project",
   "main": "index.js",
+  "bin": {
+    "tpstart": "./dist/bundle.js"
+  },
   "browser":{
     "process": false,
     "child_process": false,
