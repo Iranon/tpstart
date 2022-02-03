@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import { stat, mkdir, writeFile } from 'fs/promises';
 import { exit } from 'process';
 import { helpMessage } from './help';
