@@ -3,6 +3,8 @@
 
 #### - Usage: tpstart {ProjectName} {Flag}
 
+##### You can run -> npx tpstart {ProjectName} {Flag}
+
 It requires the project name as the first argument and accepts subsequent flags.
 
 Admitted flags are:
