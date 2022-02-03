@@ -1,4 +1,5 @@
 const path = require('path');
+const ShebangPlugin = require('webpack-shebang-plugin');
 
 module.exports = {
   mode: 'development',
@@ -19,5 +20,8 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  target: 'node'
+  target: 'node',
+  plugins: [
+    new ShebangPlugin()
+  ]
 };
