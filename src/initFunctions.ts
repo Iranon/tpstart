@@ -37,7 +37,8 @@ const initialization = async (projectName: string, flags: string[]) => {
                     console.log("-> tsc --init: DONE!");
                 }
                 else {
-                    console.log("ERROR executing tsc --init");
+                    console.log("\nERROR executing tsc --init");
+                    console.log('\x1b[34m%s\x1b[0m', "Did you have TypeScript installed?");
                     reject(1);
                 }
             });

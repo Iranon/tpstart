@@ -1,6 +1,8 @@
 # tpstart
 ### A node.js script to generate your TypeScript project.
 
+### TypeScript required! [ npm install -g typescript ]
+
 #### - Usage: tpstart {ProjectName} {Flag}
 
 ##### You can run -> npx tpstart {ProjectName} {Flag}

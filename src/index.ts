@@ -41,7 +41,7 @@ const generateScaffolding = async () => {
         }
     }
     else {
-        console.log(helpMessage);
+        console.log('\n' + helpMessage + '\n');
         exit(0);
     }
 };
