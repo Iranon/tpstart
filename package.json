@@ -1,6 +1,6 @@
 {
   "name": "tpstart",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Generate your TypeScript project",
   "main": "index.js",
   "bin": {
