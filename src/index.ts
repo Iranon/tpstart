@@ -15,7 +15,7 @@ let flags: string[] = process.argv.slice(3).filter(flag => /^[-][a-zA-Z]$/.test(
 const buildFlag: string | undefined = flags.find((arg => arg === '-b'));
 let srcDir = "src";
 let outDir = buildFlag ? "build" : "dist";
-let main = buildFlag ? "app.ts" : "index.ts";
+let main = buildFlag ? "app.js" : "index.js";
 const generateScaffolding = async () => {
     if (projectName) {
         //check if the directory exists (if not fs.stat throw an error and trigger the catch branch)
