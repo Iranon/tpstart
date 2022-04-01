@@ -31,7 +31,7 @@ const generateScaffolding = async () => {
                 //Output Directory
                 await mkdir(`./${projectName}/${outDir}`, {recursive: true});
                 console.log(`Made '${srcDir}' and '${outDir}' folders inside '${projectName}' directory`);
-                await writeFile(`./${projectName}/${srcDir}/${main}`, "");
+                await writeFile(`./${projectName}/${srcDir}/${main.replace(/\.(js)($|\?)/, '.ts')}`, "");
                 console.log(`Created '${main}' file in '${srcDir}'`);
             }
             catch (err) {
